@@ -5,22 +5,12 @@ import "./index.css";
 import { useState, useEffect, useMemo } from "react";
 import { jsx } from "react/jsx-runtime";
 import debounce from "lodash.debounce";
-import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import react from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 
-// console.log("base url", BASE_URL);
-// import axios from 'axios';
-
 const BASE_URL = import.meta.env.VITE_BASE_URL;
-console.log("BASE_URL:", BASE_URL);
-
-async function fetchUser() {
-  const response = await axios.get(`${BASE_URL}/api/user`, { withCredentials: true });
-  return response.data;
-}
 
 
 
